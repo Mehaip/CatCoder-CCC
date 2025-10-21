@@ -25,12 +25,14 @@ def create_subnumers(potential_numbers, num, correct_count):
         else:
             if check_prime(int(new_num)):
                 potential_numbers.append(new_num)
+    return correct_count
+        
 
 def solve(potential_numbers, num):
     correct_count = 0
     potential_numbers.append(num)
     while len(potential_numbers) > 0:
-        create_subnumers(potential_numbers,potential_numbers.pop(), correct_count)
+        correct_count = create_subnumers(potential_numbers,potential_numbers.pop(), correct_count)
     print(correct_count)
 
 

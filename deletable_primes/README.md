@@ -1,0 +1,1 @@
+https://catcoder.codingcontest.org/training/1207/play
